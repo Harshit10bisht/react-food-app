@@ -9,7 +9,7 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#c31432, #240b36);
+  background: #facc36;
   color: #d9e2f1;
   min-height: 100vh;
 }
@@ -19,6 +19,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 10%;
+  /* position: sticky;
+  top: 0;
+  z-index: 100; */
 }
 
 #main-header #title {
@@ -37,6 +40,7 @@ body {
 
 #main-header button {
   font-size: 1.5rem;
+  width: 110%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -45,7 +49,7 @@ h1 {
   font-weight: 700;
   font-size: 2rem;
   margin: 0;
-  color: #ffc404;
+  color: #000000;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
@@ -79,7 +83,7 @@ h1 {
 .meal-item img {
   width: 100%;
   height: 20rem;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .meal-item h3 {
@@ -93,18 +97,20 @@ h1 {
 }
 
 .meal-item-price {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: inline-block;
   background-color: #312c1d;
   color: #ffc404;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 2rem;
   margin: 0;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 
 .meal-item-actions {
   margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .cart h2 {
@@ -136,6 +142,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin: 2rem 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.15rem;
   font-weight: bold;
   color: #46443c;
@@ -207,17 +214,18 @@ h1 {
 .button {
   font: inherit;
   cursor: pointer;
-  background-color: #ffc404;
-  border: 1px solid #ffc404;
+  background-color: #ffab04;
+  border: 1px solid #ffab04;
   color: #1f1a09;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  border-radius: 55px;
+  width: 75%;
 }
 
 .button:hover,
 .button:active {
-  background-color: #ffab04;
-  border-color: #ffab04;
+  background-color: #ffc404;
+  border-color: #ffc404;
   color: #1f1a09;
 }
 
@@ -226,7 +234,7 @@ h1 {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  color: #ffc404;
+  color: #000000;
 }
 
 .text-button:hover,
@@ -247,6 +255,28 @@ h1 {
 
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
+}
+
+.center {
+  text-align: center;
+}
+
+.error {
+  width: 90%;
+  max-width: 25rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9b8b8;
+  color: #6d0b0b;
+  border-radius: 6px;
+}
+
+.error h2 {
+  margin: 0;
+}
+
+.error p {
+  margin: 0;
 }
 
 @keyframes fade-slide-up {

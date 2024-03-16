@@ -20,10 +20,10 @@ export default function Header() {
     <header id="main-header">
         <div id="title">
             <img src={logoImg} alt='A Cloud Kitchen'/>
-            <h1>FOODPANDA</h1>
+            <h1>MEALZONE</h1>
         </div>
         <nav>
-            <Button textOnly onClick={handleShowCart}>Cart ({totalCartItems})</Button>
+            <Button onClick={handleShowCart}>Cart ({totalCartItems})</Button>
         </nav>
     </header>
     );

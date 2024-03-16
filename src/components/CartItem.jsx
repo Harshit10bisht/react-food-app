@@ -10,7 +10,7 @@ export default function CartItem({
     
   return (
     <li className="cart-item">
-      <p>
+      <p className="cart-item-price">
         {name} - {quantity} x {currencyFormatter.format(price)}
       </p>
       <p className="cart-item-actions">
