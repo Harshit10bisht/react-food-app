@@ -1,0 +1,5 @@
+Since Header and Meals are done, now comes the Cart logic.
+Here, if I click add to cart button, it shows increment quantity in Meals component,
+Also in Cart button, it adds one, and plus in Cart modal i.e. checkout page also,
+it should reflect the Click button change, so prop drilling can be the case.
+That's why we go for React Context API to manage state across comp.'s properly.
